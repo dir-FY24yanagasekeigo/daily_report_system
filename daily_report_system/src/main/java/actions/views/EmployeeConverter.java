@@ -21,7 +21,7 @@ public class EmployeeConverter {
     public static Employee toModel(EmployeeView ev) {
 
         return new Employee(
-                ev.getId(),
+                ((EmployeeView) ev).getId(),
                 ev.getCode(),
                 ev.getName(),
                 ev.getPassword(),
